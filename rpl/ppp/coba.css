@@ -1,0 +1,62 @@
+.header{
+    width: 1350px;
+    height: 100px;
+    background-color: rgb(219, 97, 97);
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    
+}
+.sidebar{
+    width: 200px;
+    height: 500px;
+    background-color: rgb(86, 86, 184);
+    display: flex;
+    justify-content: center;
+    
+}
+.tengah{
+    display:flex ;
+    flex-direction: row;
+ }   
+.footer{
+    width: 1350px;
+    height: 60px;
+    background-color:aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main{
+    width: 1150px;
+    height: 500px;
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    gap: 10px;
+
+}
+.kotak{
+    background-color: white;
+    border: 1px solid black;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 2px 2px 5px grey;
+    text-align: center;
+    border-radius: 13px;
+}
+.kotak:hover{
+    background-color: rgb(112, 163, 45);
+    border: 1px solid rgb(136, 77, 77);
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 2px 2px 5px grey;
+    text-align: center;
+}
+body{
+    margin: 0;
+    padding: 0;
+    
+}

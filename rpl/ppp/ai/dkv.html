@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Apa itu DKV — Desain Komunikasi Visual</title>
+  <link rel="stylesheet" href="dkv.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">DKV • Desain Komunikasi Visual</a>
+      <nav class="nav">
+        <a href="#about">Tentang</a>
+        <a href="#skill">Keahlian</a>
+        <a href="#projects">Contoh</a>
+        <a href="#tech">Proyek Teknis</a>
+        <a href="#contact" class="btn-outline">Kontak</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Buka menu">
+        <svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1>Apa itu <span class="accent">DKV</span>?</h1>
+          <p class="lead">Desain Komunikasi Visual (DKV) adalah disiplin yang merancang pesan visual agar efektif, estetis, dan mudah dipahami — dari brand, poster, UI, sampai animasi. DKV menggabungkan tipografi, warna, gambar, dan narasi visual.</p>
+          <p>Di sini ada penjelasan ringkas, contoh nyata, dan satu set proyek teknis untuk kamu yang mau praktik lebih dalam.</p>
+          <a class="btn" href="#projects">Lihat Contoh</a>
+        </div>
+        <div class="hero-art">
+          <!-- ilustrasi SVG sederhana -->
+          <svg viewBox="0 0 600 400" class="illu" role="img" aria-hidden="true">
+            <defs>
+              <linearGradient id="g" x1="0" x2="1">
+                <stop offset="0" stop-color="#E8F8F0"/>
+                <stop offset="1" stop-color="#CFF0DB"/>
+              </linearGradient>
+            </defs>
+            <rect width="600" height="400" rx="16" fill="url(#g)"/>
+            <g transform="translate(40,40)">
+              <rect x="0" y="0" width="220" height="120" rx="8" fill="#fff" stroke="#d8efd7"/>
+              <circle cx="320" cy="80" r="60" fill="#fff" stroke="#d8efd7"/>
+              <rect x="0" y="150" width="520" height="180" rx="10" fill="#fff" stroke="#d8efd7"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="container card-section">
+      <h2>Ringkasan Singkat</h2>
+      <p>DKV fokus pada bagaimana ide atau informasi disampaikan lewat media visual. Praktik DKV meliputi <strong>identitas merek</strong>, <strong>desain antarmuka</strong>, <strong>ilustrasi</strong>, <strong>infografik</strong>, hingga <strong>motion graphics</strong>. Seorang desainer DKV tidak hanya "mempercantik" — tetapi juga memikirkan fungsi komunikasi, audiens, dan konteks.</p>
+    </section>
+
+    <section id="skill" class="container skills">
+      <h2>Keahlian Umum dalam DKV</h2>
+      <div class="grid-3">
+        <article class="skill-card">
+          <svg class="icon" viewBox="0 0 24 24"><path d="M12 2l3 6 6 .5-4.5 3.9L19 20l-7-4-7 4 1.5-7.6L3 8.5 9 8z" /></svg>
+          <h3>Branding & Identitas</h3>
+          <p>Konsep visual, guidelines, logo, tone warna, dan aplikasi identitas pada berbagai media.</p>
+        </article>
+        <article class="skill-card">
+          <svg class="icon" viewBox="0 0 24 24"><path d="M3 3h18v6H3zM3 12h18v9H3z"/></svg>
+          <h3>UI / UX Design</h3>
+          <p>Antarmuka yang intuitif, wireframe, prototyping, dan desain sistem (design systems).</p>
+        </article>
+        <article class="skill-card">
+          <svg class="icon" viewBox="0 0 24 24"><path d="M4 4h16v12H4zM4 20h16v-2H4z"/></svg>
+          <h3>Ilustrasi & Motion</h3>
+          <p>Ilustrasi editorial, animasi pendek (motion) untuk storytelling dan iklan.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="container projects">
+      <h2>Contoh Proyek Nyata</h2>
+      <div class="grid-3">
+        <article class="project-card">
+          <img src="https://images.unsplash.com/photo-1503602642458-232111445657?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Branding" loading="lazy">
+          <div class="card-body">
+            <h3>Rebranding Kafe Lokal</h3>
+            <p>Logo, palet warna, kemasan, dan template sosial media. Tujuan: tingkatkan pengenalan merek dan konsistensi visual.</p>
+            <ul class="meta">
+              <li>Deliverables: logo, brandbook, mockup kemasan</li>
+              <li>Tools: Illustrator, Figma, Photoshop</li>
+            </ul>
+          </div>
+        </article>
+        <article class="project-card">
+          <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="UI Design" loading="lazy">
+          <div class="card-body">
+            <h3>UI App Edukasi</h3>
+            <p>Desain antarmuka mobile, komponen reusable, dan prototipe interaktif untuk pengajar & siswa.</p>
+            <ul class="meta">
+              <li>Deliverables: design system, Figma library, prototipe</li>
+              <li>Tools: Figma, Principle, Lottie</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="https://images.unsplash.com/photo-1509395176047-4a66953fd231?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="Motion" loading="lazy">
+          <div class="card-body">
+            <h3>Animasi Promo Pendek</h3>
+            <p>Motion graphics 15–30 detik untuk kampanye digital: konsep storyboard, style frames, dan render akhir.</p>
+            <ul class="meta">
+              <li>Deliverables: animasi MP4/WebM, aset vektor</li>
+              <li>Tools: After Effects, Illustrator</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="tech" class="container card-section">
+      <h2>Contoh Proyek Lebih Teknis (untuk developer/desainer yang ingin implementasi)</h2>
+      <p>Berikut satu contoh proyek yang menyatukan DKV dan development: membuat <em>design system</em> dan komponen UI yang dapat dipakai di website/perangkat mobile.</p>
+
+      <h3>Stack yang direkomendasikan</h3>
+      <ul>
+        <li><strong>Design:</strong> Figma (component library), Adobe Illustrator (ikon & vektor)</li>
+        <li><strong>Frontend:</strong> React atau Vue, TypeScript, Tailwind CSS (opsional), Storybook</li>
+        <li><strong>Asset & Motion:</strong> Lottie (for animations), After Effects → Bodymovin</li>
+        <li><strong>Build & Deploy:</strong> Vite / Next.js / Nuxt, Netlify / Vercel</li>
+      </ul>
+
+      
+      <h3>Contoh workflow singkat</h3>
+      <ol>
+        <li>Desainer buat library komponen di Figma → export tokens (warna, spacing, typografi).</li>
+        <li>Developer implement tokens ke `src/tokens` → pakai Tailwind/Design Token system.</li>
+        <li>Buat komponen di `src/components` + stories di Storybook untuk testing visual.</li>
+        <li>Integrasikan Lottie/animasi untuk micro-interactions.</li>
+      </ol>
+    </section>
+
+    <section id="contact" class="container contact">
+      <div class="contact-grid">
+        <div>
+          <h2>Ingin contoh file atau konsultasi singkat?</h2>
+          <p>Kalau mau, aku bisa bantu: contoh brandboard sederhana, template Figma, atau struktur design system (kamu tinggal minta yang mana).</p>
+          <p><strong>Email:</strong> nadhaysdv100@gmail.com • <strong>Telegram:</strong> @akunmu</p>
+        </div>
+        <form class="contact-form" onsubmit="return false;">
+          <label for="name">Nama</label>
+          <input id="name" placeholder="Nama kamu" />
+          <label for="msg">Pesan singkat</label>
+          <textarea id="msg" rows="4" placeholder="Tanyakan sesuatu..."></textarea>
+          <button class="btn" type="submit">Kirim</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> DKV — Desain Komunikasi Visual • Santai & Informatif</p>
+    </div>
+  </footer>
+
+  <script>
+    // small interaction: toggle mobile nav & set year
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const btn = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.nav');
+    btn.addEventListener('click', () => nav.classList.toggle('open'));
+  </script>
+</body>
+</html>

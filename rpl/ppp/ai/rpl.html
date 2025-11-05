@@ -1,0 +1,142 @@
+<!doctype html>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="rpl.css">
+</head>
+<body>
+<header class="site-header">
+<div class="container header-inner">
+<a class="brand" href="#">
+<!-- simple inline logo -->
+<svg width="34" height="34" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+<rect x="1" y="1" width="22" height="22" rx="6" fill="#2bb3a3" />
+<path d="M7 16l3-8 3 6 3-10" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+</svg>
+<span class="brand-text">RPL </span>
+</a>
+<nav class="main-nav" aria-label="Main navigation">
+<a href="#about">Tentang</a>
+<a href="#proses">SDLC</a>
+<a href="#contoh">Contoh Proyek</a>
+<a href="#resources">Sumber</a>
+</nav>
+<button class="btn-toggle" aria-expanded="false" aria-label="Buka menu">☰</button>
+</div>
+</header>
+
+
+<main>
+<section class="hero">
+<div class="container hero-grid">
+<div class="hero-text">
+<h1>Apa itu <span>RPL</span> — </h1>
+<p class="lead">RPL (Rekayasa Perangkat Lunak) itu singkatnya: bikin perangkat lunak yang berguna, rapi, dan gampang dipelihara. Di sini kita bahas prosesnya, contoh nyata (dengan stack dan struktur folder), dan tips buat kamu yang mau coba bikin proyek sendiri.</p>
+<a class="btn-primary" href="#contoh">Lihat Contoh Proyek Fullstack</a>
+</div>
+
+
+<div class="hero-illustration" aria-hidden="true">
+<!-- light illustration made from inline SVG (no external images) -->
+<svg viewBox="0 0 600 380" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<linearGradient id="g1" x1="0" x2="1">
+<stop offset="0" stop-color="#dff7f2" />
+<stop offset="1" stop-color="#f6fffb" />
+</linearGradient>
+</defs>
+<rect width="100%" height="100%" rx="18" fill="url(#g1)" />
+<g transform="translate(40,40)">
+<rect x="0" y="0" width="260" height="160" rx="10" fill="#ffffff" opacity="0.9" />
+<rect x="10" y="12" width="80" height="12" rx="6" fill="#2bb3a3" />
+<rect x="10" y="34" width="220" height="12" rx="6" fill="#e6f7f4" />
+<rect x="10" y="56" width="180" height="12" rx="6" fill="#e6f7f4" />
+<circle cx="420" cy="80" r="44" fill="#2bb3a3" opacity="0.08" />
+<g transform="translate(360,60)">
+<rect x="0" y="0" width="120" height="80" rx="8" fill="#fff" opacity="0.96" />
+<path d="M12 26h96M12 46h64" stroke="#b6e9e0" stroke-width="6" stroke-linecap="round" />
+</g>
+</g>
+</svg>
+</div>
+</div>
+</section>
+<section id="about" class="container section">
+</article>
+<article class="card">
+<h3>Implementasi & Pengujian</h3>
+<p>Tulis kode, setup CI, dan jalankan unit/integration test. Deploy jika aman.</p>
+</article>
+</div>
+</section>
+
+
+<section id="contoh" class="container section">
+<h2>Contoh Proyek Fullstack — <small>Aplikasi E‑Commerce Mini</small></h2>
+<p class="muted">Contoh ini lengkap: ide fitur, stack rekomendasi, dan struktur folder yang bisa langsung kamu pakai untuk tugas atau portofolio.</p>
+
+
+<div class="example-card">
+<h3>Ringkasan fitur</h3>
+<ul>
+<li>Autentikasi pengguna (register/login)</li>
+<li>Katalog produk & pencarian</li>
+<li>Keranjang belanja & checkout (simulasi)</li>
+<li>Panel admin: CRUD produk dan lihat pesanan</li>
+</ul>
+
+
+<h3>Stack rekomendasi</h3>
+<div class="stack-grid">
+<div class="stack">Frontend: <strong>React</strong> + Vite</div>
+<div class="stack">Backend: <strong>Express.js (Node)</strong></div>
+<div class="stack">Database: <strong>PostgreSQL</strong> (atau SQLite untuk awal)</div>
+<div class="stack">Auth: <strong>JWT</strong> + bcrypt</div>
+<div class="stack">Storage gambar: <strong>local / S3</strong></div>
+<div class="stack">DevOps: <strong>Docker</strong>, GitHub Actions (CI)</div>
+</div>
+
+
+
+
+<h3>Tips singkat</h3>
+<ul>
+<li>Mulai dari fitur kecil (auth + produk) lalu tambah fitur lain.</li>
+<li>Gunakan Git branches untuk tiap fitur & PR agar rapi di portofolio.</li>
+<li>Dokumentasikan API (pakai Postman / Swagger) supaya pembaca mengerti.</li>
+</ul>
+</div>
+</section>
+
+
+<section id="resources" class="container section">
+<h2>Sumber & template ringan</h2>
+<ul class="resources-list">
+<li>Belajar React: dokumentasi resmi React + tutorial Vite</li>
+<li>Backend cepat: Express + Sequelize/TypeORM untuk ORM</li>
+<li>Auth: pahami JWT flow dan simpan secret di env</li>
+<li>Deployment: coba Vercel/Netlify (frontend) + Render/Heroku (backend) atau deploy ke VPS dengan Docker</li>
+</ul>
+</section>
+</main>
+
+
+<footer class="site-footer">
+<div class="container">
+<p>© <span id="year"></span> RPL  — </p>
+</div>
+</footer>
+
+
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+const btn = document.querySelector('.btn-toggle');
+const nav = document.querySelector('.main-nav');
+btn.addEventListener('click', () => {
+const expanded = btn.getAttribute('aria-expanded') === 'true';
+btn.setAttribute('aria-expanded', String(!expanded));
+nav.classList.toggle('open');
+});
+</script>
+</body>
+</html>

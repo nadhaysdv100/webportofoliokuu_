@@ -1,0 +1,91 @@
+body{
+    background-color: gold;
+    font-family: "poppins";
+    background-image: url(woilah.jpg);
+    
+}
+
+.kotak{
+    width: 200px;
+    height: 200px;
+    background-color: gold;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px grey;
+    color: black;
+    background-image: url(woilah.jpg);
+}
+
+#angka1{
+    border-radius: 8px;
+    width:200px;
+    height: 20px;
+    background-color: silver;   
+}
+#angka1:hover{
+    transform: scale(1.1);
+    color: black;
+    background-color: gold;
+}
+
+#angka2 {
+    border-radius: 8px;
+    width: 200px;
+    height: 20px;
+    align-items: center;
+    background-color: silver;
+}
+#angka2:hover{
+     transform: scale(1.1);
+    color: black;
+    background-color: gold;
+}
+#tambah{
+    border-radius: 10px;
+    width: 30px;
+    height: 20px;
+    background-color: skyblue;
+}
+#tambah:hover{
+    transform: scale(1.4);
+    color: black;
+    background-color: gold;
+}
+#kali{
+    border-radius: 20px;
+    width: 30px;
+    height: 20px;
+    background-color: cadetblue;
+}
+#kali:hover{
+    transform: scale(1.4);
+    color: black;
+    background-color: silver;
+}
+#bagi{
+    border-radius: 20px;
+    width: 30px;
+    height: 20px;
+    background-color: springgreen;
+}
+#bagi:hover{
+    transform: scale(1.4);
+    color: black;
+    background-color: hotpink;
+}
+#kurang{
+    border-radius: 20px;
+    width: 30px;
+    height: 20px;
+    background-color: aqua;
+}
+#kurang:hover{
+    transform: scale(1.4);
+    color: black;
+    background-color: turquoise;
+}

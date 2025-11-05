@@ -1,0 +1,65 @@
+body {
+font-family: Arial, sans-serif;
+      background-color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+.login-container {
+      background-color: #7c3d3d;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 320px;
+      text-align: center;
+    }
+
+h2 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+.login-container input[type="text"],
+.login-container input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0 16px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+
+.login-container input[type="submit"] {
+    background-color: #007bff; 
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+.login-container input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
+.ket_daftar {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+
+.ket_daftar a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+
+.ket_daftar a:hover {
+    text-decoration: underline;
+}
