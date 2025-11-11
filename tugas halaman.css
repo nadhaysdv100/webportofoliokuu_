@@ -245,7 +245,7 @@ font-weight: 600;
     margin-right: 50px;
     width: 160px;
   height: 120px;
-  background: var(--card);
+
   border-radius: 16px;
   display: grid;
   place-items: center;
@@ -314,9 +314,10 @@ font-weight: 600;
 
 .project {
   padding: 80px ;
-  background-color: gold; /* warna emas */
+  background-color: gold;
   text-align: center;
   height: 500px;
+  
 }
 
 .section-title {
@@ -345,7 +346,7 @@ font-weight: 600;
   overflow: hidden;
   box-shadow: 0 10px 20px rgba(0,0,0,0.1);
   transition: 0.4s ease;
-  transform: translateY(0);
+ 
 }
 
 .project-card:hover {
@@ -483,7 +484,8 @@ font-weight: 600;
   display: none;
 }
 .sidebar-responsive{
-  width: 250px;
+  width: 70%;
+  max-width: 280px;
   height: 100%;
   position: fixed;
   top: 0;
@@ -521,7 +523,90 @@ font-weight: 600;
     
     
 }
+
+
 @media screen and (max-width:768px){
+
+     .header{
+    gap: 100px;
+  }
+  .hero{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 50px;
+    margin-left: 20px;
+    
+  }
+  .hero-content P{
+    font-size: 40px;
+  }
+  .hero-image{
+    background-color: gold;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 65px;
+    
+    margin-bottom: 35px;
+    margin-top: 45px;
+    border-radius: 100px 100px 100px 100px;
+    border: 0;
+  }
+  .hero-image img{
+    margin-right: 150px;
+    margin-left: -20px;
+    margin-top: 10px;
+  }
+  .about{
+    flex-direction: column;
+    height: auto;
+    padding: 50px 0;
+    gap: 0px;
+  }
+  .about-skill{
+    flex-direction: column;
+    padding: 50px;
+
+  }
+ 
+  .skillku{
+    flex-direction: column;
+    gap: 100px;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 300px;
+    margin-bottom: 500px;
+    gap: 50px;
+    margin-left: 20px;
+    
+    
+  }
+  .yooo{
+     flex-direction: column;
+     padding: 50px;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 400px;
+    margin-bottom: 20px;
+  }
+  .project{
+   flex-direction: column;
+     padding: 50px;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:1120px;
+    margin-bottom: 1120px;
+  }
+  .contact{
+    flex-direction: column;
+    display: flex
+  }
+  
   .title{
     display: none;
   }
@@ -537,6 +622,15 @@ font-weight: 600;
     display: block;
     font-size: 24px;
     cursor: pointer;
+  }
+  .floating-button{
+     flex-direction: column;
+     padding: 5px;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    margin-bottom: 10px;
   }
 }
 @media screen and (max-width:480px){
@@ -580,17 +674,79 @@ font-weight: 600;
   }
   .about-skill{
     flex-direction: column;
+    padding: 50px;
 
   }
  
   .skillku{
     flex-direction: column;
+    gap: 100px;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 300px;
+    margin-bottom: 500px;
+    gap: 50px;
+    margin-left: 20px;
+    
+    
+  }
+   .title{
+    display: none;
+  }
+  .title-responsive{
+    display: none;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .menu{
+    display: none;
+  }
+  .yooo{
+     flex-direction: column;
+     padding: 50px;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 400px;
+    margin-bottom: 20px;
   }
   .project{
    flex-direction: column;
+     padding: 50px;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:100px;
+    margin-bottom: 100px;
+    height:auto;
   }
   .contact{
+   flex-direction: column;
+     padding: 50px;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 40px;
+    margin-bottom: 20px;
+  }
+  .contact-kanan{
     flex-direction: column;
+     padding: 50px;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 40px;
+    margin-bottom: 20px;
+  }
+  .floating-button{
+     flex-direction: column;
+     padding: 5px;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+     margin-right: 80px;
+    margin-bottom: 10px;
   }
   
 }
